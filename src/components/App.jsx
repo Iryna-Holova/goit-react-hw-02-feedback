@@ -39,7 +39,7 @@ class App extends Component {
         <FeedbackOptions
           options={['good', 'neutral', 'bad']}
           onLeaveFeedback={ this.onLeaveFeedback}
-        ></FeedbackOptions>
+        />
         {total > 0 ? (
           <Statisticks
             good={good}
@@ -47,7 +47,7 @@ class App extends Component {
             bad={bad}
             total={total}
             positivePercentage={this.countPositiveFeedbackPercentage()}
-          ></Statisticks>
+          />
         ) : (
           <Notification message="There is no feedback"></Notification>
         )}
